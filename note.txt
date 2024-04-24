@@ -1,0 +1,23 @@
+Mongodb user password: nS4A0GEs1h0UfUvG
+
+Module 1: Sign up, sign in
+1. dependencies for user authentication: bcrypt, jsonwebtoken
+2. define user model (name, email, password)
+3. create sign up route: 
+    - receive user input, 
+    - validate data, 
+    - hash password using bcrypt, 
+    - create a new user in the db
+    - generate a jwt to authenticate user
+
+4. create sign in route:
+    - receive user's credentials
+    - verify against stored user data
+    - generate a jwt if valid
+
+5. implement authentication middleware: verify jwt
+
+6. client-side integration: 
+    - create sign up and sign in forms
+    - make http requests to corresponding routes to authenticate
+    - store the received jwt (in local storage or cookies) to authenticate subsequent requests 
